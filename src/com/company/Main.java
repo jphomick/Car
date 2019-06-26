@@ -14,6 +14,11 @@ public class Main {
             command = read.nextLine();
             if (!command.toLowerCase().equals("q")) {
                 Car c = new Car(command);
+                Captain guy = new Captain("Darren", 34);
+                c.addPerson(guy);
+                c.turnOn();
+                c.setDriver(guy);
+                c.turnOn();
                 System.out.println(registration.register(c));
             }
         }

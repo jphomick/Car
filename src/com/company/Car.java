@@ -25,6 +25,7 @@ public class Car extends Vehicle {
     public void setDriver(Person driver) {
         if (people.contains(driver)) {
             this.driver = driver;
+            System.out.println(driver.getName() + " is driving the " + name);
         }
     }
 
